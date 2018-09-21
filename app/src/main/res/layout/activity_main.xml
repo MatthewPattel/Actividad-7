@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005e99"
+        android:text="Intents Application"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/inumtel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Numero Telefonico"/>
+
+    <Button
+        android:id="@+id/iabrirtel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Telefono"
+        android:onClick="intentTelefono"/>
+
+    <EditText
+        android:id="@+id/ipagweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="Pagina Web"/>
+
+    <Button
+        android:id="@+id/iabrirpagweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Pagina Web"
+        android:onClick="intentPagina"/>
+
+    <Button
+        android:id="@+id/iabrirmaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Maps"
+        android:onClick="intentMapas"/>
+</LinearLayout>
